@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../img/background.jpg');
+    background-attachment: fixed;
+}
+/* .wrapper{
+   
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -1;
+} */
+.navbar-dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-btn {
+    background-color: #333;
+    color:white;
+    padding:16px;
+    font-size:16px;
+    border: none;
+}
+.dropdown-content{
+    display: none;
+    position: absolute; 
+    background-color:#f1f1f1;
+    min-width: 100px;
+    box-shadow: rgba(222, 184, 135,0.5);
+    z-index: 1;
+    border-radius: 3px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+.navbar-dropdown:hover .dropdown-content{
+    display: block;
+    background-color: blanchedalmond;
+}
+.dropdown-content a:hover{
+    background-color: rgb(248, 216, 167);
+    border-radius: 3px;
+}
+nav{
+    display:grid;
+    /* display: ; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    grid-template-columns: min-content min-content min-content min-content;
+    background-color: #333;
+    position: fixed;
+}
+nav a { 
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+.active {
+    font-weight: bold;
+}
+main{
+    display: grid;
+    grid-template-areas: "main-con1"
+                         "main-con2"
+                         "main-con3";
+    margin-top: 200px;
+    justify-content: center;
+}
+.main-content{
+    border: 6px solid green;
+    width: 50rem;
+    padding-right: 100px;
+    padding-left: 100px;
+    color: ghostwhite;
+    background-color: rgba(36, 39, 36,0.7);
+    border-radius: 10px;
+}
+.main-content:hover .main-content{
+    box-shadow: red;
+}
+#abt{
+    display: grid;
+    grid-template-areas: "img hakkında"
+                         "img hakkında-içerik"
+                         "img yetenekler"
+                         "img yetenekler-list";
+}
+#abt img{
+    grid-area: img;
+    width: 247px;
+    height: 335px;
+    border: 2px dashed;
+    border-radius: 200px;
+    margin-right: 30px;
+}
+#abt h1{
+    grid-area: hakkında;
+    margin-left: 70px;
+}
+#abt p{
+    grid-area: hakkında-içerik;
+    margin-left: 70px;
+}
+#abt h3{
+    grid-area: yetenekler;
+    margin-left: 70px;
+}
+#abt ul{
+    grid-area: yetenekler-list;
+    margin-left: 100px;
+}
+.ul-iletisim{
+    list-style-type: none;
+}
+#İletisim{
+    margin-top: 10px;
+}
+.iletism-el{
+    border: white 2px dashed;
+    width: 500px;
+
+}
+.bi{
+    justify-self: baseline;
+    font: 45px rgb(241, 183, 22);
+}
+.iletisim-info{
+    justify-self: end;
+}
+    
