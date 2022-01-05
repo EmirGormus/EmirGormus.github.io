@@ -78,7 +78,7 @@ main{
     justify-content: center;
 }
 .main-content{
-    border: 4px solid ghostwhite;
+    border: 4px dashed ghostwhite;
     width: 50rem;
     padding-right: 100px;
     padding-left: 100px;
@@ -141,4 +141,7 @@ main{
 #div-iletisim{
     margin-top:10px
 }
-    
+#div-iletisim a{
+    color:ghostwhite;
+    text-decoration:none;
+}  
